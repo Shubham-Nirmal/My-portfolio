@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Table</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e3f2fd; /* Soft Blue Background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .education-container {
+            width: 90%;
+            max-width: 900px;
+            background: white;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1e88e5;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #90caf9;
+        }
+
+        th {
+            background-color: #1976d2; /* Deep Blue */
+            color: white;
+            font-size: 18px;
+        }
+
+        td {
+            color: #333;
+            font-size: 16px;
+            background: #bbdefb;
+        }
+
+        tr:hover {
+            background-color: #64b5f6;
+            transition: 0.3s;
+            color: white;
+        }
+
+        /* Home Button Style */
+        .home-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #1976d2;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .home-button:hover {
+            background-color: #0d47a1;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .education-container {
+                width: 95%;
+                padding: 20px;
+            }
+
+            th, td {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .home-button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="education-container">
+        <h2>My Education</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>marks/ grade</th>
+            </tr>
+            <tr>
+                <td>Bachelor in Computer Science</td>
+                <td>BAMU University</td>
+                <td>2023 - 2025</td>
+                <td>A++</td>
+            </tr>
+            <tr>
+                <td>Higher Secondary</td>
+                <td>M.J.Fule high School Pishor</td>
+                <td>2022 - 2023</td>
+                <td>74</td>
+            </tr>
+            <tr>
+                <td>Secondary Education</td>
+                <td>M.J.Fule high School Pishor</td>
+                <td>2019 - 2020</td>
+                <td>77</td>
+            </tr>
+        </table>
+
+        <!-- Home Button -->
+        <a href="./../../index.html" class="home-button">Home</a>
+
+    </div>
+
+</body>
+</html>
